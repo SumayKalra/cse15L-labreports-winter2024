@@ -4,7 +4,6 @@
 
 <h3 id="custom-id">CD Nothing</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/c51c2b38-2e21-4949-82f2-3d141e49ad05)
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af)
 If you don't cd anything in the terminal it will do nothing as cd'ing is used to go into a directory and gain access to other things such as more directories or files
 
 
@@ -23,6 +22,7 @@ If you cd a file you will get a message letting you now you cant cd a file as it
 <h3 id="custom-id">LS Nothingn</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/fc99be4d-6357-4962-99e3-cff259b0c1e6)
 
+| cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af)
 
 <h3 id="custom-id">LS Directory</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/940cac81-3a44-4379-ab17-c6c248d1e196)
@@ -45,6 +45,7 @@ If you cd a file you will get a message letting you now you cant cd a file as it
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f662fdd9-cf40-4557-9a12-d82611c8e0be)
 
 
+| cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af)
 
 | | image      | explanation | 
 | :--- | :---        |    :----:   |  
