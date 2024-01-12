@@ -5,14 +5,18 @@
 <h3 id="custom-id">CD Nothing</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/c51c2b38-2e21-4949-82f2-3d141e49ad05)
 
+If you don't cd anything in the terminal it will do nothing as cd'ing is used to go into a directory and gain access to other things such as more directories or files
+
 
 <h3 id="custom-id">CD Directory</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/32631319-8e00-48d9-9783-e20068f0e0c1)
 
+If you cd a directory in the terminal you will gain access to the contents of that directory which could include more directories and files
 
 <h3 id="custom-id">CD File</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/2ddfcf0a-f7c9-4464-9b98-a2e5c665d958)
 
+If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper
 
 
 
