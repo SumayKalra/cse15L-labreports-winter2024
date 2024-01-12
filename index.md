@@ -4,4 +4,4 @@
 | :--- | :---        |    :----:   |  
 | cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af) | Cd nothing: you arent entering into anything directory; Cd directory: you have cd'd into the directory lecture ; cd file: does not work as cd is for directories       | 
 | ls |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d4349f31-af6e-456e-baad-b676d36ab408) | ls nothing: shows all directories under the main branch (lecture1); ls lecture1: shoes all directories and files within lecture1 directory; ls file: does not work as there is nothing in the file        | 
-| cat |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b63aad6c-7f3a-4dbd-b1b7-2f20b8353007)| Text        | 
+| cat |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b63aad6c-7f3a-4dbd-b1b7-2f20b8353007)| cat nothing: does nothing and need to control C to get out of the terminal makes it get stuck pretty much; cat directory: you can not cat a directory and there is nothing to run; cat file: simply just runs the file        | 
