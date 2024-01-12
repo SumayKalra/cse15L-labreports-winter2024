@@ -6,7 +6,6 @@
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/c51c2b38-2e21-4949-82f2-3d141e49ad05)
 
 
-
 <h3 id="custom-id">CD Directory</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/32631319-8e00-48d9-9783-e20068f0e0c1)
 
