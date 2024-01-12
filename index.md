@@ -1,5 +1,40 @@
 <h3 id="custom-id">LAB 1 cd/cat/ls question</h3>
 
+
+
+<h3 id="custom-id">CD Nothingn</h3>
+
+
+
+<h3 id="custom-id">CD Directory</h3>
+
+
+<h3 id="custom-id">CD File</h3>
+
+
+
+
+<h3 id="custom-id">LS Nothingn</h3>
+
+
+
+<h3 id="custom-id">LS Directory</h3>
+
+
+<h3 id="custom-id">LS File</h3>
+
+
+<h3 id="custom-id">CAT Nothingn</h3>
+
+
+
+<h3 id="custom-id">CAT Directory</h3>
+
+
+<h3 id="custom-id">CAT File</h3>
+
+
+
 | | image      | explanation | 
 | :--- | :---        |    :----:   |  
 | cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af) | Cd nothing: you arent entering into anything directory; Cd directory: you have cd'd into the directory lecture ; cd file: does not work as cd is for directories| 
