@@ -44,7 +44,6 @@ If you cd a file you will get a message letting you now you cant cd a file as it
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f662fdd9-cf40-4557-9a12-d82611c8e0be)
 
 
-| cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af)
 
 | | image      | explanation | 
 | :--- | :---        |    :----:   |  
