@@ -3,7 +3,11 @@
 
 
 <h3 id="custom-id">CD Nothing</h3>
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/c51c2b38-2e21-4949-82f2-3d141e49ad05)
+
+'''
+[user@sahara-] $ cd
+[user@sahara-] $
+'''
 
 If you don't cd anything in the terminal it will do nothing as cd'ing is used to go into a directory and gain access to other things such as more directories or files
 
