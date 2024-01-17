@@ -4,17 +4,19 @@
 
 <h3 id="custom-id">CD Nothing</h3>
 
-'''
-[user@sahara-] $ cd
-[user@sahara-] $
-'''
+```
+[user@sahara ~] $ cd
+[user@sahara ~] $
+```
 
 If you don't cd anything in the terminal it will do nothing as cd'ing is used to go into a directory and gain access to other things such as more directories or files
 
 
 <h3 id="custom-id">CD Directory</h3>
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/32631319-8e00-48d9-9783-e20068f0e0c1)
-
+```
+[user@sahara ~] $ cd lecture1
+[user@sahara ~/lecture1] $
+```
 If you cd a directory in the terminal you will gain access to the contents of that directory which could include more directories and files
 
 <h3 id="custom-id">CD File</h3>
