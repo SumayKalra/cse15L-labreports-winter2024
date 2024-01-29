@@ -9,7 +9,7 @@
 [user@sahara ~] $
 ```
 
-If you don't cd anything in the terminal it will do nothing as cd'ing is used to go into a directory and gain access to other things such as more directories or files. Not an error but nothing happened.
+The current directory is '/home'. If you don't cd anything with no arguments it will chang the directory to the root directory, so this does not result in an error.
 
 
 <h3 id="custom-id">CD Directory</h3>
@@ -18,7 +18,7 @@ If you don't cd anything in the terminal it will do nothing as cd'ing is used to
 [user@sahara ~/lecture1] $
 ```
 
-If you cd a directory in the terminal you will gain access to the contents of that directory which could include more directories and files. Not an error
+The current directory is '/home'. If you cd a directory in the terminal you will gain access to the contents of that directory which could include more directories and files. Not an error
 
 <h3 id="custom-id">CD File</h3>
 ```
@@ -26,7 +26,7 @@ If you cd a directory in the terminal you will gain access to the contents of th
 bash cd: Hello.java: Not a directory
 ```
 
-If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper. This is an error
+The current directory is '/home'. If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper. This is an error
 
 
 <h3 id="custom-id">LS Nothing</h3>
@@ -35,7 +35,7 @@ If you cd a file you will get a message letting you now you cant cd a file as it
 lecture1
 ```
 
-If you ls nothing you will just see the highlighted folder shown which is the file/folder you are out of, and the files outside of it For example if you are in no folders then it will show all the outside folders from your user cd, thus since here we are out of all folders we show the only folder on the outside which is lecture. this is not an error
+The current directory is '/home'. If you ls nothing you will just see the highlighted folder shown which is the file/folder you are out of, and the files outside of it For example if you are in no folders then it will show all the outside folders from your user cd, thus since here we are out of all folders we show the only folder on the outside which is lecture. this is not an error
 
 
 <h3 id="custom-id">LS Directory</h3>
@@ -44,7 +44,7 @@ If you ls nothing you will just see the highlighted folder shown which is the fi
 Hello.class Hello.java messages README
 ```
 
-If you ls a directory you will see all the other folders in the directory plus any other files, which is useful so you can either cd into another directory or see all the files in a folder displayed! This is not an error. If directory name is not found this would be an error.
+The current directory is '/home'. If you ls a directory you will see all the other folders in the directory plus any other files, which is useful so you can either cd into another directory or see all the files in a folder displayed! This is not an error. If directory name is not found this would be an error.
 
 <h3 id="custom-id">LS File</h3>
 ```
@@ -52,7 +52,7 @@ If you ls a directory you will see all the other folders in the directory plus a
 Hello.class 
 ```
 
-If you ls a file you just see that file name displayed as there are no other files or directories within that file, thus this function is kinda useless as you only get the file name as an output. This is an error. If file name is not found there would be an error.
+The current directory is '/lecture1'. If you ls a file you just see that file name displayed as there are no other files or directories within that file, thus this function is kinda useless as you only get the file name as an output. This is an error. If file name is not found there would be an error.
 
 <h3 id="custom-id">CAT Nothing</h3>
 ```
@@ -60,7 +60,7 @@ If you ls a file you just see that file name displayed as there are no other fil
 ^C
 ```
 
-If you cat nothing the computer seems to run something and can not stop it, thus you are forced to hit control C to stop running the machine so you can execute another line of code in the terminal. This is not a error.
+The current directory is '/home'. If you cat nothing the computer seems to run something and can not stop it, thus you are forced to hit control C to stop running the machine so you can execute another line of code in the terminal. This is not a error.
 
 
 <h3 id="custom-id">CAT Directory</h3>
@@ -69,7 +69,7 @@ If you cat nothing the computer seems to run something and can not stop it, thus
 cat: lecture1: is a directory
 ```
 
-If you cat a directory you will get an error as a cat cannot print whatever is in that directory as it contains more files and possibly directories, however, it will tell you that it is a directory thus you can learn from your mistake and continue . This is an error
+The current directory is '/home'. If you cat a directory you will get an error as a cat cannot print whatever is in that directory as it contains more files and possibly directories, however, it will tell you that it is a directory thus you can learn from your mistake and continue . This is an error
 
 
 <h3 id="custom-id">CAT File</h3>
@@ -78,7 +78,7 @@ If you cat a directory you will get an error as a cat cannot print whatever is i
 Hello World
 ```
 
-If you cat a file you will get returned the contents of that file, even if you are not in a further away directory on the directory tree, thus this feature is useful for time efficiency! This is not an error but if the file name did not exist it would be an error. It is important to realize these commands are all done through the home directory as that is the use of cat.
+The current directory is '/home'. If you cat a file you will get returned the contents of that file, even if you are not in a further away directory on the directory tree, thus this feature is useful for time efficiency! This is not an error but if the file name did not exist it would be an error. It is important to realize these commands are all done through the home directory as that is the use of cat.
 
 
 | | image      | explanation | 
