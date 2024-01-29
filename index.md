@@ -26,7 +26,7 @@ The current directory is '/home'. If you cd a directory in the terminal you will
 bash cd: Hello.java: Not a directory
 ```
 
-The current directory is '/home'. If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper. This is an error
+The current directory is '/lecture1'. If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper. This is an error
 
 
 <h3 id="custom-id">LS Nothing</h3>
