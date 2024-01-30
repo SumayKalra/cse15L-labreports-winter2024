@@ -32,7 +32,9 @@ Logging in
 
 <h3 id="custom-id">Logging in without Password  + ls + absolute path</h3>
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4a4a2605-0e94-42f0-964c-96f6b9ab3891)
+
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/706a7a91-46cd-4474-9d29-6c190a48530a)
+
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/81d42d76-868d-4ed6-9163-e262f9cbff89)
 
 
