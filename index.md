@@ -1,88 +1,45 @@
-<h3 id="custom-id">LAB 1 cd/cat/ls question</h3>
+<h3 id="custom-id">LAB 2 SERVERS</h3>
+
+<h3 id="custom-id">Code + website</h3>
+
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d7d449b9-c759-4098-b018-4cd5b7b0d80c)
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/93543ecf-dbb8-4453-8177-3d2e374f35b5)
+
+Which methods in your code are called?
+- The method called here is handleRequest(URL) in the chat Handler class
+  
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- The url argument is relevant to the handler method, the path is the /add-message with the query being/add-message?s=Hello&user=jpolitz
+- chat log is relevant as it starts as an empty string and this new query is basically added to it and then its displayed
+
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- How it works to me is the handler request checks the path, and its add message, so it goes on to the code to add a message, in which the chat log value is updated from an empty string to what we see on the query
+
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/6f525b07-10ee-409b-a563-dbbc2bcb7962)
+
+Which methods in your code are called?
+- The method called here is handleRequest(URL) in the chat Handler class
+
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- The url argument is relevant to the handler method, the path is the /add-message with the query being/add-message?s=Hi&user=Yash
+- chat log is relevant as it starts as an the new string from the last command and this new query is basically added to it and then its displayed
+
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- How it works to me is the handler request checks the path, and its add message, so it goes on to the code to add a message, in which the chat log value is updated fromthe first string to both so it looks like a chat
+
+Logging in 
 
 
+<h3 id="custom-id">Logging in without Password  + ls + absolute path</h3>
 
-<h3 id="custom-id">CD Nothing</h3>
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4a4a2605-0e94-42f0-964c-96f6b9ab3891)
 
-```
-[user@sahara ~] $ cd
-[user@sahara ~] $
-```
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/706a7a91-46cd-4474-9d29-6c190a48530a)
 
-The current directory is '/home'. If you don't cd anything with no arguments it will chang the directory to the root directory, so this does not result in an error.
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/81d42d76-868d-4ed6-9163-e262f9cbff89)
 
 
-<h3 id="custom-id">CD Directory</h3>
-```
-[user@sahara ~] $ cd lecture1
-[user@sahara ~/lecture1] $
-```
-
-The current directory is '/home'. If you cd a directory in the terminal you will gain access to the contents of that directory which could include more directories and files. Not an error
-
-<h3 id="custom-id">CD File</h3>
-```
-[user@sahara ~/lecture1] $ cd Hello.java
-bash cd: Hello.java: Not a directory
-```
-
-The current directory is '/lecture1'. If you cd a file you will get a message letting you now you cant cd a file as it is meant for directories and a file only hold code or txt or images etc and does not have more directories or files within them to be accessed you can think of it like a folder with pieces of paper, you can access a folder to get to more folders and pieces of paper, but you cant access pieces of paper. This is an error
+<h3 id="custom-id">What I learned from week 2-3</h3>
+I think the coolest stuff I learned was creating your paths for commands for people to do on your own sever, like adding a message or increasing a number. Within this I really didn't understand how hosting a server worked and I am glad to understand it now  because it is some pretty cool stuff. I wonder if this is similar to the background stuff that runs for things like Django and react. 
 
 
-<h3 id="custom-id">LS Nothing</h3>
-```
-[user@sahara ~] $ ls
-lecture1
-```
-
-The current directory is '/home'. If you ls nothing you will just see the highlighted folder shown which is the file/folder you are out of, and the files outside of it For example if you are in no folders then it will show all the outside folders from your user cd, thus since here we are out of all folders we show the only folder on the outside which is lecture. this is not an error
-
-
-<h3 id="custom-id">LS Directory</h3>
-```
-[user@sahara ~] $ ls lecture1
-Hello.class Hello.java messages README
-```
-
-The current directory is '/home'. If you ls a directory you will see all the other folders in the directory plus any other files, which is useful so you can either cd into another directory or see all the files in a folder displayed! This is not an error. If directory name is not found this would be an error.
-
-<h3 id="custom-id">LS File</h3>
-```
-[user@sahara ~/lecture1] $ ls Hello.class
-Hello.class 
-```
-
-The current directory is '/lecture1'. If you ls a file you just see that file name displayed as there are no other files or directories within that file, thus this function is kinda useless as you only get the file name as an output. This is an error. If file name is not found there would be an error.
-
-<h3 id="custom-id">CAT Nothing</h3>
-```
-[user@sahara ~/] $ cat 
-^C
-```
-
-The current directory is '/home'. If you cat nothing the computer seems to run something and can not stop it, thus you are forced to hit control C to stop running the machine so you can execute another line of code in the terminal. This is not a error.
-
-
-<h3 id="custom-id">CAT Directory</h3>
-```
-[user@sahara ~/] $ cat lecture1
-cat: lecture1: is a directory
-```
-
-The current directory is '/home'. If you cat a directory you will get an error as a cat cannot print whatever is in that directory as it contains more files and possibly directories, however, it will tell you that it is a directory thus you can learn from your mistake and continue . This is an error
-
-
-<h3 id="custom-id">CAT File</h3>
-```
-[user@sahara ~/] $ cat lHello.java 
-Hello World
-```
-
-The current directory is '/home'. If you cat a file you will get returned the contents of that file, even if you are not in a further away directory on the directory tree, thus this feature is useful for time efficiency! This is not an error but if the file name did not exist it would be an error. It is important to realize these commands are all done through the home directory as that is the use of cat.
-
-
-| | image      | explanation | 
-| :--- | :---        |    :----:   |  
-| cd |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f72b493e-7768-4c7f-be8d-2772abba95af) | Cd nothing: you arent entering into anything directory; Cd directory: you have cd'd into the directory lecture ; cd file: does not work as cd is for directories| 
-| ls |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d4349f31-af6e-456e-baad-b676d36ab408) | ls nothing: shows all directories under the main branch (lecture1); ls lecture1: shoes all directories and files within lecture1 directory; ls file: does not work as there is nothing in the file | 
-| cat |![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b63aad6c-7f3a-4dbd-b1b7-2f20b8353007)| cat nothing: does nothing and need to control C to get out of the terminal makes it get stuck pretty much; cat directory: you can not cat a directory and there is nothing to run; cat file: simply just runs the file | 
