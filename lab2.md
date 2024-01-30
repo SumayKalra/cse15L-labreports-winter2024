@@ -3,7 +3,6 @@
 <h3 id="custom-id">Code + website</h3>
 
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d7d449b9-c759-4098-b018-4cd5b7b0d80c)
-
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/93543ecf-dbb8-4453-8177-3d2e374f35b5)
 Which methods in your code are called?
 - The method called here is handleRequest(URL) in the chat Handler class
