@@ -31,6 +31,7 @@ Logging in
 
 
 <h3 id="custom-id">Logging in without Password  + ls + absolute path</h3>
+
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4a4a2605-0e94-42f0-964c-96f6b9ab3891)
 
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/706a7a91-46cd-4474-9d29-6c190a48530a)
@@ -38,5 +39,7 @@ Logging in
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/81d42d76-868d-4ed6-9163-e262f9cbff89)
 
 
+<h3 id="custom-id">What I learned from week 2-3</h3>
+I think the coolest stuff I learned was creating your paths for commands for people to do on your own sever, like adding a message or increasing a number. Within this I really didn't understand how hosting a server worked and I am glad to understand it now  because it is some pretty cool stuff. I wonder if this is similar to the background stuff that runs for things like Django and react. 
 
 
