@@ -1,120 +1,44 @@
-# Part 1: Bugs
+<h3 id="custom-id">LAB 2 SERVERS</h3>
 
-Fail:
-```
-@Test 
-public void testReverseInPlace() {
-  int[] input1 = { 3,4,5 };
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[]{ 5,4,3 }, input1);
-}
-```
+<h3 id="custom-id">Code + website</h3>
 
-No Fail:
-```
-@Test
-public void testReverseInPlace2() {
-  int[] input1 = { 3 };
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[]{ 3 }, input1);
-}
-```
-running tests:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/45e8d71b-7682-4868-8465-137cd278974f)
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d7d449b9-c759-4098-b018-4cd5b7b0d80c)
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/93543ecf-dbb8-4453-8177-3d2e374f35b5)
 
-PreFix:
-```
-static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length; i += 1) {
-    arr[i] = arr[arr.length - i - 1];
-  }
-}
-```
+Which methods in your code are called?
+- The method called here is handleRequest(URL) in the chat Handler class
+  
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- The url argument is relevant to the handler method, the path is the /add-message with the query being/add-message?s=Hello&user=jpolitz
+- chat log is relevant as it starts as an empty string and this new query is basically added to it and then its displayed
 
-PostFix:
-```
-static void reverseInPlace(int[] arr) {
-  for (int i = 0; i < arr.length / 2; i++) {
-    int temp = arr[i];
-    arr[i] = arr[arr.length - i - 1];
-    arr[arr.length - i - 1] = temp;
-  }
-}
-```
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- How it works to me is the handler request checks the path, and its add message, so it goes on to the code to add a message, in which the chat log value is updated from an empty string to what we see on the query
 
-# Part 2: Command Research
-Command Chosen:
-```find```
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/6f525b07-10ee-409b-a563-dbbc2bcb7962)
 
-Option 1:
-```type``` 
+Which methods in your code are called?
+- The method called here is handleRequest(URL) in the chat Handler class
 
-Example 1: 
-```find ./technical -type d```
-Output 1: 
-``` 
-./technical/
-./technical/911report
-./technical/biomed
-./technical/government
-./technical/plos
-```
-This is good for showing all the directories in a folder.
+What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+- The url argument is relevant to the handler method, the path is the /add-message with the query being/add-message?s=Hi&user=Yash
+- chat log is relevant as it starts as an the new string from the last command and this new query is basically added to it and then its displayed
 
-Example 2:
-```find ./technical -type f -executable```
-Output 2:
-```         ```
-This is good to see if there is any executable code in a folder.
+How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+- How it works to me is the handler request checks the path, and its add message, so it goes on to the code to add a message, in which the chat log value is updated fromthe first string to both so it looks like a chat
 
-Option 2:
-```name```
+Logging in 
 
-Example 1:
-```find ./technical -name "Progress_report.txt" ```
-Output 1:
-``` ./technical/government/About_LSC/Progress_report.txt```
-This is good for finding the path of a specific text file.
 
-Example 2:
-```find ./technical -name "Doesnotexit.txt" ```
-Output 2:
-```       ```
-In this case what happens is the file does not exist which is good to know if your looking for a file.
+<h3 id="custom-id">Logging in without Password  + ls + absolute path</h3>
 
-Option 3:
-```-mtime```
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4a4a2605-0e94-42f0-964c-96f6b9ab3891)
 
-Example 1:
-```find ./technical -mtime -7```
-Output 1:
-```          ```
-This line asks the machine if any files have been edited in the past 7 days which is good to know when coding with alot of people.
-Example 2:
-```find ./technical -mtime +1000```
-Output 2: 
-```        ```
-Similarly, this line checks if any file has been edited in the last 1000 days which is good information to know.
+Private Key: id_rsa ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b4f98429-211e-42d8-9cbe-a4fd3cae875d)
 
-Option 4:
-```-size```
-
-Example 1:
-```find ./technical -type f - size +1000M```
-Output 1:
-```          ```
-This outputs all the files over 1000 mbs which is good to see for storage reasons.
-
-Example 2:
-```find ./technical -type f - size -1k```
-Output 2:
-```          ```
-This outputs all the files below 1 kb which is also good for storage reasons.
-
-General comment: Alot of these commands lead to no output in ./technical due to the limited environment ./technical provides
+Public Key: ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d870d697-872f-482d-abc2-9d85fb879dde)
 
 
 
-
-
-
+<h3 id="custom-id">What I learned from week 2-3</h3>
+I think the coolest stuff I learned was creating your paths for commands for people to do on your own sever, like adding a message or increasing a number. Within this I really didn't understand how hosting a server worked and I am glad to understand it now  because it is some pretty cool stuff. I wonder if this is similar to the background stuff that runs for things like Django and react. 
