@@ -34,9 +34,10 @@ Logging in
 
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4a4a2605-0e94-42f0-964c-96f6b9ab3891)
 
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/706a7a91-46cd-4474-9d29-6c190a48530a)
+Private Key: id_rsa ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b4f98429-211e-42d8-9cbe-a4fd3cae875d)
 
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/81d42d76-868d-4ed6-9163-e262f9cbff89)
+Public Key: ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d870d697-872f-482d-abc2-9d85fb879dde)
+
 
 
 <h3 id="custom-id">What I learned from week 2-3</h3>
