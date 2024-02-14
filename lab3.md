@@ -113,6 +113,11 @@ This outputs all the files below 1 kb which is also good for storage reasons.
 
 General comment: Alot of these commands lead to no output in ./technical due to the limited environment ./technical provides
 
+Source: Chat gpt prompt and output in the image
+I got the general info of what you can do with find and applied it to the ./technical GitHub.
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/a3d440d5-bbdd-4a97-9b82-431107e01518)
+
+
 
 
 
