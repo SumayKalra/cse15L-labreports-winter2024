@@ -1,4 +1,4 @@
-#LAB 4 VIM
+# LAB 4 VIM
 
 STEP 4:
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/cd18b4f8-d041-41d1-afeb-1c9abdbb9958)
