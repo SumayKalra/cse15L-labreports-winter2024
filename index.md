@@ -41,13 +41,14 @@ static void reverseInPlace(int[] arr) {
   }
 }
 ```
+The prior code would set the elements in the middle of the array, to the new ones instead of the original ones as it should be doing. What this new fix does is it stops that swapping as we approach the middle so our solution has become ideal with no issues!
 
 
 # Part 2: Command Research
 Command Chosen:
-```
-find
-```
+```find```
+
+**Warning: If an Output looks like its blank that means there is no output**
 
 Option 1:
 ```type``` 
@@ -66,52 +67,69 @@ This is good for showing all the directories in a folder.
 
 Example 2:
 ```find ./technical -type f -executable```
+
 Output 2:
 ```         ```
 This is good to see if there is any executable code in a folder.
+
+
 
 Option 2:
 ```name```
 
 Example 1:
 ```find ./technical -name "Progress_report.txt" ```
+
 Output 1:
 ``` ./technical/government/About_LSC/Progress_report.txt```
+
 This is good for finding the path of a specific text file.
 
 Example 2:
 ```find ./technical -name "Doesnotexit.txt" ```
+
 Output 2:
 ```       ```
 In this case what happens is the file does not exist which is good to know if your looking for a file.
+
+
 
 Option 3:
 ```-mtime```
 
 Example 1:
 ```find ./technical -mtime -7```
+
 Output 1:
 ```          ```
 This line asks the machine if any files have been edited in the past 7 days which is good to know when coding with alot of people.
+
 Example 2:
 ```find ./technical -mtime +1000```
+
 Output 2: 
 ```        ```
 Similarly, this line checks if any file has been edited in the last 1000 days which is good information to know.
+
+
 
 Option 4:
 ```-size```
 
 Example 1:
 ```find ./technical -type f - size +1000M```
+
 Output 1:
 ```          ```
 This outputs all the files over 1000 mbs which is good to see for storage reasons.
 
 Example 2:
 ```find ./technical -type f - size -1k```
+
 Output 2:
 ```          ```
+
+
 This outputs all the files below 1 kb which is also good for storage reasons.
 
 General comment: Alot of these commands lead to no output in ./technical due to the limited environment ./technical provides
