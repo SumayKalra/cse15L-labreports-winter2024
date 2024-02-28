@@ -20,7 +20,7 @@ public void testReverseInPlace2() {
 }
 ```
 running tests:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/45e8d71b-7682-4868-8465-137cd278974f)
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/c2ad2f55-3734-4f93-a5a6-22fbf3228cb9)
 
 PreFix:
 ```
@@ -42,9 +42,12 @@ static void reverseInPlace(int[] arr) {
 }
 ```
 
+
 # Part 2: Command Research
 Command Chosen:
-```find```
+```
+find
+```
 
 Option 1:
 ```type``` 
