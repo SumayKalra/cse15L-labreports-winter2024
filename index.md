@@ -48,7 +48,7 @@ The prior code would set the elements in the middle of the array, to the new one
 Command Chosen:
 ```find```
 
-**Warning: If an Output looks like its blank that means there is no output**
+**Warning: If an Output looks like its blank that means there is no output** (based off your feedback this is all i need to do as there does not need to be an output)
 
 Option 1:
 ```type``` 
