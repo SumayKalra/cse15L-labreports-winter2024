@@ -70,9 +70,10 @@ Example 2:
 
 Output 2:
 ```         ```
+
 This is good to see if there is any executable code in a folder.
 
-
+_________________________________________________________________________________
 
 Option 2:
 ```name```
@@ -90,8 +91,10 @@ Example 2:
 
 Output 2:
 ```       ```
+
 In this case what happens is the file does not exist which is good to know if your looking for a file.
 
+_________________________________________________________________________________
 
 
 Option 3:
@@ -102,6 +105,7 @@ Example 1:
 
 Output 1:
 ```          ```
+
 This line asks the machine if any files have been edited in the past 7 days which is good to know when coding with alot of people.
 
 Example 2:
@@ -109,8 +113,10 @@ Example 2:
 
 Output 2: 
 ```        ```
+
 Similarly, this line checks if any file has been edited in the last 1000 days which is good information to know.
 
+_________________________________________________________________________________
 
 
 Option 4:
@@ -121,6 +127,7 @@ Example 1:
 
 Output 1:
 ```          ```
+
 This outputs all the files over 1000 mbs which is good to see for storage reasons.
 
 Example 2:
