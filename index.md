@@ -1,45 +1,135 @@
-# LAB 4 VIM
+**Debugging Scenario**
 
-STEP 4:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/59a777af-d7c3-4a45-a9f7-8b156c971cf9)
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d96d8e4e-0d40-4b05-82e1-ad85af5ef4de)
+1. Classmate: Why is the expected value for the solution true when it is supposed to be false? This is not a palindrome so let's find this out together!
 
+   ```
+   public boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int reversed = 0;
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+        }
+        return !(x == reversed || x == reversed / 10);
+    }
+```
 
-Key: ```ssh<space>sukalra@ieng6.ucsd.edu<return>```
+```
+@Test
+public void testPalindromeNum() {
+        PalindromeNumber solution = new PalindromeNumber();
+        int target = 19234;
+        int[] expected = False;
+        int[] actual = solution.isPalindrome(target);
+        assertArrayEquals(expected, actual);
+}
+```
+![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/f00d7233-79cf-48b1-89d9-43b07175ed6c)
 
-This command allows us to access the UCSD computer to do the lab on this instead as we need to
-STEP 5:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/4c7a67ca-9cad-460f-8501-90e56502f0df)
+2. TA: You should add a print statement within your code to see why it is not working and why you get the opposite answer each time
 
-Key: ```git<space>clone<space>git@github.com:ucsd-cse15l-s23/lab7.git>return>```
+3. Students Utilization of Advice
+```
+  public boolean isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int reversed = 0;
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+            System.out.println(reversed);
+        }
+        return !(x == reversed || x == reversed / 10);
+    }
+```
+![unnamed](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/b9680b77-df2b-44c3-b5fb-ad73c82beea1)
+The bug is located on line 17 as we recognize through the print statement that the code realizes it is false, but for some reason just keeps pushing the fact that its true or vice versa, and that is because in the exclamation mark in the return statement switches the boolean value to the incorrect one, thus, by simply removing it we ensure that the code has now been fixed.
 
-Here we clone the git lab7 into our remote server to use for the remainder of the lab
+```
+public class lab5 {
+    int x;
+    public lab5(int x){
+    this.x = x;
+    }
+    
+    public boolean isPalindrome() {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int reversed = 0;
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+            System.out.println(reversed);
+        }
+        return !(x == reversed || x == reversed / 10);
+    }
+}
+```
+Directories:
+```
+lab5/
+|-  starter/
+    |-  PublicTester.class
+  	|-  PublicTester.java
+  	|-  lab5.class
+  	|-  lab5.java
+  	|-  test.sh
+|-  libs/
+  	|-  hamcrest-2.2.jar
+  	|-  junit-4.13.2.jar
+```
 
-STEP 6:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/984d9d22-0daf-4384-a935-ad457d474fc1)
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/83706e1d-53f8-458b-ab60-f81bc9251d40)
+PublicTester.java:
+```
+package lab5.starter;
 
-Key: ```cd<space>lab7<return>``` and ```bash<space>test.sh<return>```
+import org.junit.Test;
+import static org.junit.Assert.assertArrayEquals;
 
-We go to the lab 7 directory and we run the testing bash script to see what tests are failing and what we need to fix
+public class PublicTester {
 
-STEP 7:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/882949fe-57d9-4582-8910-6451c4fffc93)
+    @Test
+    public void testPalindromeNum() {
+        int target = 19234;
+        boolean expected = false; 
+        lab5 lab = new lab5(); 
+        boolean actual = lab.isPalindrome(target);
+        assertEquals(expected, actual); 
+    }
+}
+```
 
-Key:```vim<space>ListExampls.java<return>``` and  ```43jexi2<esc>:wq```
+lab5.java:
+```
+public class lab5 {
+    int x;
+    public lab5(int x){
+    this.x = x;
+    }
+    
+    public boolean isPalindrome() {
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
+        }
+        int reversed = 0;
+        while (x > reversed) {
+            reversed = reversed * 10 + x % 10;
+            x /= 10;
+        }
+        return !(x == reversed || x == reversed / 10);
+    }
+}
+```
+test.sh: <br/>
+`javac -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. PublicTester.java` 
+`java -cp ../libs/junit-4.13.2.jar:../libs/hamcrest-2.2.jar:. org.junit.runner.JUnitCore PublicTester`
 
-Using vim we open up the java script to edit, and we go down 43 lines using 43j, then e to go to the end of the next word, then x to delete one element, and then i to insert something, in which we insert 2, we hit escape to leave that area and then :wq to get out of vim and back to the command line
+Command Lines: `bash test.sh `
+Fixing bug: Remove ! from the return statement that switched the boolean from true to false or false to true
 
-STEP 8:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/dda3d98e-2a14-4578-b877-da999ee20122)
-Key:  ```bash<space>test.sh```
-
-This is to retest our new and imporved java script
-
-STEP 9:
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d3618db8-c98a-4393-986c-cff7dc668d46)
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/51f40303-424d-48cf-bafa-095d0493b2c3)
-
-Keys: ```git<space>add<space>.<return>```  and ```git<space>commit<space>-m<space>"fixed<space>the<space>java<space>script<space>so<space>all<space>tests<space>pass"<return>``` and ```git<space>push<return>```
-
-Now that we have fixed the script we must update it on github, so we use git add to save those changes and git commit - m to send a message on what those changes were and what they did
+# Reflection
+I think the coolest thing that I learned in the second half of the quarter would be the vim commands to navigate through vim, as in my lab at the med school I would tediously go through bash and vim code to edit certain things with raspberry pis, as I never heard of these short cuts. Now my job has become alot easier so thank you cse 15L!
