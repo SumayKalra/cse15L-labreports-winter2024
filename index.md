@@ -1,4 +1,4 @@
-**Debugging Scenario**
+# Debugging Scenario
 
 1. Classmate: Why is the expected value for the solution true when it is supposed to be false? This is not a palindrome so let's find this out together!
 
