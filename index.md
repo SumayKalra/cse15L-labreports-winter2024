@@ -39,7 +39,6 @@ This is to retest our new and imporved java script
 STEP 9:
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/d3618db8-c98a-4393-986c-cff7dc668d46)
 ![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/51f40303-424d-48cf-bafa-095d0493b2c3)
-![image](https://github.com/SumayKalra/cse15L-labreports-winter2024/assets/67125138/7bdc83fa-b218-4d53-8765-fde93b65acf7)
 
 Keys: ```git<space>add<space>.<return>```  and ```git<space>commit<space>-m<space>"fixed<space>the<space>java<space>script<space>so<space>all<space>tests<space>pass"<return>``` and ```git<space>push<return>```
 
